@@ -1,3 +1,12 @@
+/*
+
+Proyecto Fuente: Página web "Ayn Rand en español".
+
+desarrollador: César Castillo López
+
+ Creado en: abril 17, 2019  */        
+
+
 body{
 font-size: 16px;
 font-family: 'Sacramento', cursive;  	
@@ -293,19 +302,6 @@ div#cerrar_contacto{
 div#forma_contacto div#cerrar_contacto:hover{
  cursor: pointer;	
 }
-/*
-div#cerrar_contacto:before{
-font-family: "icomoon";	
-content: "\e945";
-font-size: 4cm;
-background: red;
-position: relative;
-left: 0px;
-top: 0px;
-height: 100%;		
-}
-*/
-
 
 div#cerrar_contacto span{
 font-size: 7em; 
@@ -486,82 +482,7 @@ transition-duration: 0.4s;
  footer span{
  	font-size: ;
  }
-/*
-figure div#envelop{
-font-family: "icomoon";	
-content: "\e945";
-font-size: 1.5cm;
-position: relative;
-top: 0px;
-left: 0px;	
-}
-*/
 
-/*
-div#slider section#etiqueta1{
-height:  100px;
-background: orange;
-}
-*/
-/*
-div#boton_anterior > div{
-background: orange;
-font-size: 0.2cm;
-left:  0px;	
-top: 25px;
-
-}
-*/
-/*
-div#boton_anterior > div{
-left:  0px;	
-top: 0px;
-background: blue;
-font-size: 1cm;
-
-}
-*/
-
-/*
-div#boton_siguiente{
-font-family: "icomoon";
-content: "\ea34";
-font-size: 1cm;
-position: relative;
-width: 125px;
-height: 125px;
-cursor: pointer;
-overflow: hidden; 
-top: 0px;
-right: 
-}
-
-div#boton_anterior{
-font-family: "icomoon";
-content: "\ea38";
-font-size: 1cm;
-left: 0px;	
-position: relative;
-cursor: pointer;
-overflow: hidden; 
-}
-*/
-/*
-h3:before{
-font-family: "icomoon";
-content: "\ea38";
-font-size: 1cm;
-left: 0px;
-width: 50px;
-}
-
-h3:after{
-font-family: "icomoon";
-content: "\ea34";
-font-size: 1cm;
-left: 0px;
-}
-*/
 
 
 @media screen and (min-width: 480px)
