@@ -1,0 +1,8 @@
+@font-face {
+  font-family:"Merienda";
+  src:url("font/Merienda-Regular.ttf");
+}
+
+span{
+font-family: 'Merienda', cursive;  
+}

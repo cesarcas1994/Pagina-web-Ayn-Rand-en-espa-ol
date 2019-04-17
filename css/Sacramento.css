@@ -1,0 +1,14 @@
+@font-face {
+  font-family:"Sacramento";
+  src:url("font/Sacramento-Regular.ttf");
+}
+
+p{
+font-family: 'Sacramento', cursive;  
+}
+
+p:before{
+font-family: "icomoon";
+content: "\e945";
+font-size: 1cm;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>documento de prueba
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Diseño grafico, trabajo de diseño">
+  <meta name="description" content="diseño grafico profesional, moderno y con buen estilo">
+  <meta name="owner" content="César Castillo">
+  <meta name="author" content="cesarcas1994@gmail.com">
+  <meta name="robots" content="index, follow">
+
+
+
+  <script type="modernizr-custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  
+   <link href="https://fonts.googleapis.com/css?family=Merienda|Sacramento" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="css/Merienda.css">
+   <link rel="stylesheet" type="text/css" href="css/Sacramento.css">
+   <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+<link rel="stylesheet" type="text/css" href="css/desing.css">
+
+</head>
+<body>
+  <header>
+    <div id="h1">
+
+     <a id="Ayn_Rand" href="index.html">
+      Ayn Rand 
+     </a>
+      
+     <a id="fig_Atlas_Society"  href="index.html">
+
+      <figure>
+        <img src="img/delantera.jpg">
+      </figure>
+
+     </a> 
+
+     
+     
+    </div>
+
+    <div id="Menú_open" >
+     <h3 id="Menú" onclick="display_menu()">
+     MENÚ 
+     </h3> 
+    </div>
+
+    <nav id="Menú_exit">
+      <h3 id="Menú" onclick="display_menu()">
+      EXIT
+      </h3>
+      <figure id="logo_menu">
+       <img src="img/delantera.jpg">
+      </figure>
+      <figure id="logo_entradas">
+      <li>
+        <a onclick="nav_section('etiqueta1')" href="#">
+          Entrada1
+        </a>
+      </li>
+      <li>
+        <a onclick="nav_section('etiqueta2')" href="#">
+          Entrada2
+        </a> 
+      </li>
+      <li>
+        <a onclick="nav_section('etiqueta3')" href="#">
+          Entrada3
+        </a>
+      </li>
+      <li>
+        <a onclick="nav_section('etiqueta4')" href="#">
+          Entrada4
+        </a>
+      </li>  
+      <li>
+        <a onclick="display_formcontact()" href="#">
+          Contacto
+        </a>
+      </li>  
+     </figure>
+
+    </nav>
+
+  
+    <div id="boton_siguiente" onclick="display_section('adelante')"> 
+      <div class="flecha"></div>       
+    </div>
+    <div id="boton_anterior" onclick="display_section('atras')"> 
+      <div class="flecha2"></div>  
+    </div>
+   
+</header>
+
+<div id="slider">
+
+  <section class="slide" id="etiqueta1" style="display:block" >
+    
+    <div id="animación">
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
+    </div>
+
+    <div id="logo_principal">
+      <h2> <strong>Ayn Rand</strong>en español</h2>
+      <figure><img src="img/atlas-logo.png"></figure>
+    </div>
+
+    <div id="botones_principal">
+      <div class="Ingresar" onclick="display_formcontact()">Ingresar</div>
+      <div class="Opción2">Opción2</div>
+    </div>
+
+
+  </section>
+  <section class="slide" id="etiqueta2" style="display:none"></section>
+  <section class="slide" id="etiqueta3" style="display:none"></section>
+  <section class="slide" id="etiqueta4" style="display:none"></section>
+    
+</div>
+
+<div id="forma_contacto" style="display:none>
+  <form action="contactos.php" id="formulario" name="formulario" method="post">
+    
+    <div id="cerrar_contacto" onclick="display_formcontact()">
+      
+        <span class="icon-envelop"></span>
+       
+    </div>
+
+    <span id="saludo">
+      DI HOLA
+    </span>
+
+
+    <div id="cuerpo_formulario">
+
+      <input type="text" id="name" name="name" placeholder="Tu nombre">
+
+      <input type="text" id="email" name="email" placeholder="Tu email">
+
+      <textarea type="message" id="message" name="name" placeholder="mensaje"></textarea> 
+
+
+      <input type="submit" name="submit" id="button" value="Enviar"/>
+
+    </div>
+  </form>
+</div>
+
+<div id="boton_formulario" onclick="display_formcontact()"></div>
+
+<footer>
+
+  <div id="redes_sociales">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+     
+  </div>
+
+  <span>
+    2019 All rights reserved | Privacity Policy
+  </span>
+
+</footer>
+
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript"
+>alertSize();
+ function alertSize() { 
+  var myWidth = 0, myHeight = 0; 
+  if( typeof( window.innerWidth ) == 'number' ) { 
+    //No-IE 
+    myWidth = window.innerWidth; 
+    myHeight = window.innerHeight; 
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) { 
+    //IE 6+ 
+    myWidth = document.documentElement.clientWidth; 
+    myHeight = document.documentElement.clientHeight; 
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) { 
+    //IE 4 compatible 
+    myWidth = document.body.clientWidth; 
+    myHeight = document.body.clientHeight; 
+  }
+
+  var display;
+  var Menú_open= document.getElementById("Menú_exit");
+  display = Menú_open.style.display; 
+  if (myWidth < 767){
+   Menú_open.style.display = "none"; 
+  } 
+  else{
+   Menú_open.style.display = "block"; 
+  }
+ }
+
+ function display_menu(){
+  var display;
+  var Menú_open= document.getElementById("Menú_exit");
+  display = Menú_open.style.display;
+
+  if (display == "none"){
+    Menú_open.style.display = "block";
+   }
+  else{
+    Menú_open.style.display = "none";
+  } 
+
+ }
+
+function display_section(nav){
+ var sections = new Array(4);
+  sections[0]= "etiqueta1";
+  sections[1]= "etiqueta2";
+  sections[2]= "etiqueta3";
+  sections[3]= "etiqueta4";
+ var search;
+ var show; 
+
+  for (var i=0; i<4; i++) {
+    search = document.getElementById(sections[i]);
+    show = search.style.display;
+    if (show == "block"){
+      search.style.display = "none";
+      if (nav == "adelante"){
+       i++;
+       if (i>3) i=0;
+      }
+      if (nav == "atras"){
+       i--;
+       if (i<0) i=3;
+      }
+      search = document.getElementById(sections[i]); 
+      search.style.display = "block";
+      break;
+    }
+  }
+}
+
+function nav_section(nav){
+  var sections = new Array(4);
+   sections[0]= "etiqueta1";
+   sections[1]= "etiqueta2";
+   sections[2]= "etiqueta3";
+   sections[3]= "etiqueta4";
+   var search;
+   
+  for (var i=0; i<4; i++) {
+    search = document.getElementById(sections[i]);
+    search.style.display = "none";
+
+    if (sections[i] == nav){
+      search.style.display = "block";
+    }
+  }
+}
+
+var display;
+var Menú_open= document.getElementById("forma_contacto");
+display = Menú_open.style.display; 
+Menú_open.style.display = "none"; 
+ 
+function display_formcontact(nav){
+ var display;
+ var Menú_open= document.getElementById("forma_contacto");
+ display = Menú_open.style.display; 
+
+ if (display == "none"){
+    Menú_open.style.display = "block";
+   }
+ else{
+    Menú_open.style.display = "none";
+  } 
+}
+
+</script>
+
+
+
+
+  
+</body>
+</html>
